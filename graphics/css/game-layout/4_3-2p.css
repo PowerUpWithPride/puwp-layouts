@@ -46,6 +46,7 @@
     color: var(--timer-color);
     height: 130px;
     line-height: 130px;
+    width: 1050px;
     font-size: 95px;
     padding-left: 20px;
 }

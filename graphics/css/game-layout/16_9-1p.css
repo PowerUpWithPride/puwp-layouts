@@ -39,6 +39,8 @@
 #game-name {
     color: var(--timer-color);
     font-size: 70px;
+    line-height: 70px;
+    width: 800px;
 }
 
 .game-detail-container {

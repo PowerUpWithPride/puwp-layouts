@@ -56,6 +56,7 @@
     color: var(--timer-color);
     height: 150px;
     line-height: 150px;
+    width: 1000px;
     font-size: 95px;
     padding-left: 20px;
 }
