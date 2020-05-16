@@ -92,10 +92,16 @@ function createPlayerData(player) {
     }
 
     // Parse pronouns from the runner name, if they're present.
-    let name = player.name.split('-');
+    // Check for "name (pronouns)" form as well as "name - pronouns".
+    let name;
+    if (player.name.includes('(') && player.name.includes(')')) {
+        name = player.name.split('(');
+    } else {
+        name = player.name.split('-');
+    }
     let pronouns = '';
     if (name.length > 1) {
-        pronouns = name[1].trim();
+        pronouns = name[1].trim().replace(')', '');
     }
     name = name[0].trim();
 
