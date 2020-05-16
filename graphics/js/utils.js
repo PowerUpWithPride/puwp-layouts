@@ -25,30 +25,26 @@ function msToTime(duration, noHour) {
     return timeString;
 }
 
-// Fix pronoun wrapping on certain layouts.
-// Put a thin space after each slash if the layout needs wrapping.
-const layoutsToWrapPronouns = [
-    '16_9-2p',
-    '4_3-1p',
-    '4_3-2p',
-    '4_3-3p',
-    '4_3-4p',
-    'gb-1p',
-    'gba-1p',
-    'ds-1p',
-    'ff4r',
-    'z1r',
-    'z3r',
-];
+function FixSize(selector) {
 
-function fixPronounWrapping(layoutInfo) {
-    if (layoutsToWrapPronouns.includes(layoutInfo.code)) {
-        let pronounElements = $('.pronouns');
-        pronounElements.each((i, elem) => {
-            // Use .html() so it doesn't get doubly escaped.
-            $(elem).html($(elem).text().replace(/([-/_])/g,'$&&hairsp;'));
-        });
-    }
+    setTimeout(function(){
+        let divWidth = $(selector + ":visible").width();
+        let fontSize = 92;
+
+        // Reset font to default size to start.
+        $(selector).css("font-size", "");
+
+        let text_org = $(selector + ":visible").html();
+        let text_update = '<span style="white-space:nowrap;">' + text_org + '</span>';
+        $(selector + ":visible").html(text_update);
+
+        while ($(selector + ":visible").children().width() > divWidth){
+            // console.log($(selector + ":visible").children().width() + " " + divWidth);
+            $(selector).css("font-size", fontSize -= 1);
+        }
+
+        // console.log(fontSize)
+    }, 500);
 }
 
 function getProgressBarColor(current, max){
