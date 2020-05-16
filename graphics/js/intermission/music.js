@@ -3,7 +3,7 @@
 
 // Refresh currently playing info every 5 seconds.
 const refreshInterval = 5 * 1000;
-const URL = 'https://music.powerupwithpride.org:42069/status-json.xsl';
+const URL = 'https://layout.powerupwithpride.org/music-stats';
 
 function updateMusic() {
     $.getJSON(URL, function( data ) {
