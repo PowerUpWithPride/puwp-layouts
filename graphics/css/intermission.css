@@ -180,9 +180,9 @@ body {
     margin-bottom: 10px;
     background: var(--text-color);
     padding-left: 20px;
-    height: 170px;
     width: 470px;
     padding-top: 10px;
+    padding-bottom: 10px;
 }
 
 .incentive-name {
@@ -192,12 +192,11 @@ body {
 .incentive-progress-full{
     width: 300px;
     height: 44px;
-    position: relative; /* TODO: yikers */
+    display: inline-block;
     background: white;
 }
 
 .incentive-footer {
-    position: absolute;
     height: 44px;
     width: 440px;
     margin-top: 10px;
@@ -206,21 +205,18 @@ body {
 .incentive-progress1, .incentive-progress2, .incentive-progress3 {
     width: 50px;
     height: 44px;
-    position: absolute;
-    left: 0;
-    top: 0;
+    display: inline-block;
 }
 
 .incentive-progress-text1, .incentive-progress-text2, .incentive-progress-text3
 {
-    position: absolute;
-    right: 0;
-    top: 0;
+    display: inline-block;
     font-size: 30px;
     height: 44px;
     line-height: 44px;
-    width: 140px;
+    width: 125px;
     text-align: center;
+    vertical-align: top;
 }
 
 /* BID WAR */
