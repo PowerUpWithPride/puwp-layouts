@@ -67,6 +67,7 @@
 
 .game-detail {
     color: var(--text-color-alt);
+    text-shadow: 0 0 5px var(--text-background-alt), 0 0 5px var(--text-background-alt);
 }
 
 #game-name {
