@@ -205,6 +205,7 @@ body {
 .incentive-progress1, .incentive-progress2, .incentive-progress3 {
     width: 50px;
     height: 44px;
+    position: absolute;
     display: inline-block;
 }
 
