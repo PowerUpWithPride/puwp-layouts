@@ -1,17 +1,27 @@
 {
   "name": "puwp-layouts",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Power Up With Pride layouts using NodeCG + Speedcontrol",
   "homepage": "https://layout.powerupwithpride.org",
   "author": "DorkmasterFlek",
   "dependencies": {
   },
   "nodecg": {
-    "compatibleRange": "^1.0.0",
+    "compatibleRange": "^1.7.0",
     "dependencies": [
       "speedcontrol/nodecg-speedcontrol:>=2.2",
       "PowerUpWithPride/speedcontrol-layoutswitch:>=1.0",
       "PowerUpWithPride/speedcontrol-gdqtracker:>=1.0"
+    ],
+    "dashboardPanels": [
+      {
+        "name": "theme-select",
+        "title": "Theme Select",
+        "width": 2,
+        "file": "theme-select.html",
+        "headerColor": "#525C78",
+        "workspace": "Scene Editing"
+      }
     ],
     "graphics": [
       {
@@ -21,11 +31,6 @@
       },
       {
         "file": "intermission.html",
-        "width": 1920,
-        "height": 1080
-      },
-      {
-        "file": "background.html",
         "width": 1920,
         "height": 1080
       }

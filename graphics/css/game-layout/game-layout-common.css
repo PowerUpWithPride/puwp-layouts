@@ -1,9 +1,5 @@
 /* Common definitions for game layouts. */
 
-body {
-    background: url('../../img/background.png') no-repeat;
-}
-
 #charity-logo-container {
     position: absolute;
     /*Hide charity logo for most layouts.  Let layouts show if they want.*/
@@ -36,7 +32,9 @@ body {
     display: inline-block;
     font-size: 60px;
     color: var(--text-color);
-    text-shadow: 0 0 3px var(--text-background), 0 0 3px var(--text-background), 0 0 3px var(--text-background), 0 0 3px var(--text-background);
+    text-shadow: 0 0 3px var(--text-background), 0 0 3px var(--text-background), 0 0 3px var(--text-background),
+        0 0 3px var(--text-background), 0 0 3px var(--text-background), 0 0 3px var(--text-background),
+        0 0 3px var(--text-background), 0 0 3px var(--text-background), 0 0 3px var(--text-background);
 }
 
 #donation-container {

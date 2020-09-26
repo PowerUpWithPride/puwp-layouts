@@ -4,7 +4,8 @@
     <meta charset="utf-8">
     <title>Power Up With Pride Game Layout</title>
 
-    <link rel="stylesheet" href="css/common.css">
+    <!--Theme-specific CSS file updated via Scene Editing tab in NodeCG dashboard.-->
+    <link id="theme-css-file" rel="stylesheet" href="">
     <link rel="stylesheet" href="css/game-layout/game-layout-common.css">
 
     <!--Layout-specific CSS file is updated via the layout change Javascript file below.-->
@@ -17,8 +18,15 @@
     <script>
         let globalLayoutInfo = {"code": "4_3-1p"};
         let offlineMode = false;
+
+        // Set event year based on current date.
+        $(() => {
+            let now = new Date();
+            $(".event-year").text(now.getFullYear().toString());
+        });
     </script>
     <script src="js/utils.js"></script>
+    <script src="js/themes.js"></script>
     <script src="js/donations.js"></script>
     <script src="js/game-layout/layout-change.js"></script>
     <script src="js/game-layout/run-info.js"></script>
@@ -35,12 +43,12 @@
 <div id="event-logo-container">
     <img id="mushy-logo" src="img/mushy.png" alt="Mushy logo">
     <span id="event-logo-name">PUWP</span>
-    <span id="event-logo-year">2020</span>
+    <span id="event-logo-year" class="event-year"></span>
 </div>
 
 <!--Donation total.-->
 <div id="donation-container">
-    <div id="donation-event-name">PUWP 2020</div>
+    <div id="donation-event-name">PUWP <span class="event-year"></span></div>
     <div id="donation-total"></div>
 </div>
 

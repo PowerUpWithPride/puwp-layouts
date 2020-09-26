@@ -1,0 +1,29 @@
+@font-face {
+    font-family: Chosence;
+    src: url('../../fonts/Chosence_Regular.otf');
+}
+
+/* Common definitions for all layouts. */
+body {
+    background: url('../../img/background-wp.png') no-repeat;
+    font-family: "Chosence", sans-serif;
+    margin: 0;
+    padding: 0;
+    width: 1920px;
+    height: 1080px;
+    position: absolute;
+
+    /* Colour definitions across layouts. */
+    --text-color: #0084ff;
+    --text-background: white;
+    --text-color-alt: white;
+    --text-background-alt: #0084ff;
+    --text-background-alt-transparent: rgba(00, 0, 0, 0.7);
+    --game-details-color: #0084ff;
+    --game-details-background: rgba(00, 0, 0, 0.7);
+    --timer-color: white;
+    --timer-background: #0084ff;
+    --timer-color-alt: #0084ff;
+    --timer-background-alt: white;
+    --game-feed-chroma-key: #00ff00;
+}

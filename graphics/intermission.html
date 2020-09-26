@@ -4,7 +4,8 @@
     <meta charset="utf-8">
     <title>Power Up With Pride Intermission Layout</title>
 
-    <link rel="stylesheet" href="css/common.css">
+    <!--Theme-specific CSS file updated via Scene Editing tab in NodeCG dashboard.-->
+    <link id="theme-css-file" rel="stylesheet" href="">
     <link rel="stylesheet" href="css/intermission.css">
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
@@ -13,8 +14,15 @@
     <script>
         let globalLayoutInfo = {"code": "4_3-1p"};
         let offlineMode = false;
+
+        // Set event year based on current date.
+        $(() => {
+            let now = new Date();
+            $("#event-logo-year").text(now.getFullYear().toString());
+        });
     </script>
     <script src="js/utils.js"></script>
+    <script src="js/themes.js"></script>
     <script src="js/donations.js"></script>
     <script src="js/intermission/music.js"></script>
     <script src="js/intermission/run-info.js"></script>
@@ -25,7 +33,7 @@
             <div id="event-logo-container">
                 <img id="mushy-logo" src="img/mushy.png" alt="Mushy logo">
                 <span id="event-logo-name">PUWP</span>
-                <span id="event-logo-year">2020</span>
+                <span id="event-logo-year"></span>
             </div>
             <div class="schedule">
                 <div class="coming-up-title">Coming Up</div>
