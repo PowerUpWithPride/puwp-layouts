@@ -9,7 +9,7 @@ We used to have separate repositories for each event, but now we will simply upd
 ### 1. Install Node.js
 Instructions on the Node.js site here: https://nodejs.org/en/
 
-**NOTE:** At time of this writing, the current LTS version is 12.x and the NodeCG developers recommend sticking with the LTS releases for production.  It should work with the current stable version as well, which is 13.x currently, but you'll have to test this yourself.
+**NOTE:** At time of this writing, the current LTS version is 14.x and the NodeCG developers recommend sticking with the LTS releases for production.
 
 ### 2. Install NodeCG
 Follow the quick start guide here: https://nodecg.com/tutorial-3_quick-start.html
