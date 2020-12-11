@@ -27,3 +27,11 @@ body {
     --timer-background-alt: white;
     --game-feed-chroma-key: #00ff00;
 }
+
+.event-name-slug span {
+    display: none;
+}
+
+.event-name-slug:after {
+    content: "PUWP";
+}
