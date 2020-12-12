@@ -8,6 +8,9 @@ const donationBundle = 'speedcontrol-gdqtracker';
 const rotateInterval = 15000;
 let rotateState = 0;
 
+// Flag for whether we've resized the bid war names after updating.
+let bid_war_size_done = false;
+
 // Initialize the page.
 $(() => {
     // Run data.
@@ -66,7 +69,15 @@ $(() => {
             rotateState = 2;
             $('.schedule').hide();
             $('.incentives').fadeOut(500, () => {
-                $('.bid-wars').fadeIn(500);
+                $('.bid-wars').fadeIn(500, () => {
+                    // Fix size for bid names once we're visible.
+                    if (!bid_war_size_done) {
+                        for (let i = 1; i <= 3; i++) {
+                            FixSize('.bid-name' + i);
+                        }
+                        bid_war_size_done = true;
+                    }
+                });
             });
         } else {
             rotateState = 0;
@@ -338,6 +349,7 @@ $(() => {
 
             // Show bid war.
             bidWarsWrapper.show();
+            bid_war_size_done = false;
         }
     }
 });
