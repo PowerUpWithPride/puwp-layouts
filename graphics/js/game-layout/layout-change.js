@@ -2,32 +2,18 @@
 'use strict';
 
 $(() => {
-    if (offlineMode) {
-        loadOffline();
-    }
-    else{
-        loadFromSpeedControl();
-    }
+    // The bundle name where all the run information is pulled from.
+    const layoutBundle = 'speedcontrol-layoutswitch';
 
-    function loadOffline() {
-        console.log("loadOffline");
-        changeLayout(globalLayoutInfo);
-    }
+    // Replicants
+    let currentLayout = nodecg.Replicant('currentGameLayout', layoutBundle);
 
-    function loadFromSpeedControl() {
-        // The bundle name where all the run information is pulled from.
-        const layoutBundle = 'speedcontrol-layoutswitch';
-
-        // Replicants
-        let currentLayout = nodecg.Replicant('currentGameLayout', layoutBundle);
-
-        // Listens for the layout style to change.
-        currentLayout.on('change', newVal => {
-            if (newVal) {
-                changeLayout(newVal);
-            }
-        });
-    }
+    // Listens for the layout style to change.
+    currentLayout.on('change', newVal => {
+        if (newVal) {
+            changeLayout(newVal);
+        }
+    });
 });
 
 // Update the current layout by switching the CSS file.

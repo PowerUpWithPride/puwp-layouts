@@ -12,9 +12,6 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js"></script>
 
     <script>
-        let globalLayoutInfo = {"code": "4_3-1p"};
-        let offlineMode = false;
-
         // Set event year based on current date.
         $(() => {
             let now = new Date();
@@ -44,53 +41,13 @@
 
                 <div class="on-deck-wrapper">
                     <div class="on-deck-title">On Deck</div>
-                    <div class="on-deck-info">
-                        <div class="on-deck-name1"></div>
-                        <div class="on-deck-runner on-deck-runner1"></div>
-                    </div>
-                    <div class="on-deck-info">
-                        <div class="on-deck-name2"></div>
-                        <div class="on-deck-runner on-deck-runner2"></div>
-                    </div>
-                    <div class="on-deck-info">
-                        <div class="on-deck-name3"></div>
-                        <div class="on-deck-runner on-deck-runner3"></div>
+                    <div class="on-deck-info-wrapper">
                     </div>
                 </div>
             </div>
             <div class="incentives">
                 <div class="incentives-title">UPCOMING INCENTIVES</div>
                 <div class="incentive-wrapper">
-                    <div class="incentive">
-                        <div class="incentive-game incentive-game1"></div>
-                        <div class="incentive-name incentive-name1"></div>
-                        <div class="incentive-footer">
-                            <div class="incentive-progress-full">
-                                <div class="incentive-progress1"></div>
-                            </div>
-                            <div class="incentive-progress-text1"></div>
-                        </div>
-                    </div>
-                    <div class="incentive">
-                        <div class="incentive-game incentive-game2"></div>
-                        <div class="incentive-name incentive-name2"></div>
-                        <div class="incentive-footer">
-                            <div class="incentive-progress-full">
-                                <div class="incentive-progress2"></div>
-                            </div>
-                            <div class="incentive-progress-text2"></div>
-                        </div>
-                    </div>
-                    <div class="incentive">
-                        <div class="incentive-game incentive-game3"></div>
-                        <div class="incentive-name incentive-name3"></div>
-                        <div class="incentive-footer">
-                            <div class="incentive-progress-full">
-                                <div class="incentive-progress3"></div>
-                            </div>
-                            <div class="incentive-progress-text3"></div>
-                        </div>
-                    </div>
                 </div>
             </div>
 
@@ -100,38 +57,6 @@
                     <div class="bid-war-game"></div>
                     <div class="bid-war-name"></div>
                     <div class="bid-wrapper">
-                        <div class="bid">
-                            <div class="bid-footer">
-                                <div class="bid-progress-full">
-                                    <div class="bid-progress1"></div>
-                                    <div class="bid-name bid-name1"></div>
-                                </div>
-
-                                <div class="bid-progress-text1"></div>
-                            </div>
-                        </div>
-
-                        <div class="bid">
-                            <div class="bid-footer">
-                                <div class="bid-progress-full">
-                                    <div class="bid-progress2"></div>
-                                    <div class="bid-name bid-name2"></div>
-                                </div>
-
-                                <div class="bid-progress-text2"></div>
-                            </div>
-                        </div>
-
-                        <div class="bid">
-                            <div class="bid-footer">
-                                <div class="bid-progress-full">
-                                    <div class="bid-progress3"></div>
-                                    <div class="bid-name bid-name3"></div>
-                                </div>
-
-                                <div class="bid-progress-text3"></div>
-                            </div>
-                        </div>
                     </div>
                 </div>
             </div>

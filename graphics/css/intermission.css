@@ -208,14 +208,14 @@ body {
     margin-top: 10px;
 }
 
-.incentive-progress1, .incentive-progress2, .incentive-progress3 {
+.incentive-progress {
     width: 50px;
     height: 44px;
     position: absolute;
     display: inline-block;
 }
 
-.incentive-progress-text1, .incentive-progress-text2, .incentive-progress-text3
+.incentive-progress-text
 {
     display: inline-block;
     font-size: 30px;
@@ -292,7 +292,7 @@ body {
     left: 0;
 }
 
-.bid-progress1, .bid-progress2, .bid-progress3 {
+.bid-progress {
     width: 50px;
     height: 44px;
     position: absolute;
@@ -300,7 +300,7 @@ body {
     top: 0;
 }
 
-.bid-progress-text1, .bid-progress-text2, .bid-progress-text3
+.bid-progress-text
 {
     position: absolute;
     right: 0;

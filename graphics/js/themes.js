@@ -2,29 +2,15 @@
 'use strict';
 
 $(() => {
-    if (offlineMode) {
-        loadOffline();
-    }
-    else{
-        loadFromSpeedControl();
-    }
+    // Replicants
+    let currentTheme = nodecg.Replicant('currentTheme');
 
-    function loadOffline() {
-        console.log("loadOffline");
-        changeTheme("puwp");
-    }
-
-    function loadFromSpeedControl() {
-        // Replicants
-        let currentTheme = nodecg.Replicant('currentTheme');
-
-        // Listens for the theme to change.
-        currentTheme.on('change', newVal => {
-            if (newVal) {
-                changeTheme(newVal);
-            }
-        });
-    }
+    // Listens for the theme to change.
+    currentTheme.on('change', newVal => {
+        if (newVal) {
+            changeTheme(newVal);
+        }
+    });
 });
 
 // Update the current layout by switching the CSS file.
