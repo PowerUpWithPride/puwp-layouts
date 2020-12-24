@@ -36,12 +36,18 @@ $(() => {
         $(".runner-details").data('teamID', '');
         let i = 0;
         for (let team of currentTeamsData) {
+            i += 1;
+            let names = [];
+            let pronouns = [];
             for (let player of team.players) {
-                i += 1;
-                $("#runner-name" + i).text(player.name);
-                $("#pronouns" + i).text(player.pronouns);
-                $("#runner-details" + i).data('teamID', player.teamID);
+                names.push(player.name);
+                pronouns.push(player.pronouns);
             }
+
+            // Set name/pronoun text for the whole team.
+            $("#runner-name" + i).text(names.join(', '));
+            $("#pronouns" + i).text(pronouns.join(', '));
+            $("#runner-details" + i).data('teamID', team.id);
         }
 
         // Fix pronoun wrapping for the current layout if needed.
