@@ -12,9 +12,7 @@ Instructions on the Node.js site here: https://nodejs.org/en/
 **NOTE:** At time of this writing, the current LTS version is 14.x and the NodeCG developers recommend sticking with the LTS releases for production.
 
 ### 2. Install NodeCG
-Follow the quick start guide here: https://nodecg.com/tutorial-3_quick-start.html
-
-Do steps 1-2 to install the `nodecg-cli` package.
+Follow the install guide here to install the `nodecg-cli` package: https://www.nodecg.dev/docs/installing
 
 ### 3. Make a working directory and install NodeCG
 Create a fresh directory, and run the NodeCG setup in it:
