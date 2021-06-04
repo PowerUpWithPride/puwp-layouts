@@ -3,7 +3,7 @@ div {
 }
 
 body {
-    background: url('../../img/bgnd-yetee21.png') no-repeat; /*REMOVE AFTER PUWP21*/
+    background: url('../img/bgnd-yetee21.png') no-repeat; /*REMOVE AFTER PUWP21*/
     padding: 0;
     margin: 0;
     --sidebar-width: 554px;
