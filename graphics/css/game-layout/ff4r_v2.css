@@ -1,0 +1,119 @@
+#donation-container {
+    width: 205px;
+    height: 100px;
+    padding: 15px 0;
+    bottom: 0;
+    left: 0;
+    font-size: 60px;
+}
+
+#donation-event-name {
+    display: block;
+    font-size: 30px;
+}
+
+#event-logo-container {
+    display: none;
+}
+
+#timer {
+    width: 195px;
+    height: 130px;
+    line-height: 130px;
+    bottom: 0;
+    right: 0;
+    font-size: 60px;
+    padding-left: 10px;
+}
+
+#game-details {
+    width: 1465px;
+    height: 125px;
+    bottom: 0;
+    left: 205px;
+    font-size: 30px;
+    padding-left: 45px;
+    padding-top: 5px;
+}
+
+#game-name {
+    color: var(--timer-color);
+    font-size: 70px;
+    line-height: 70px;
+    width: 800px;
+}
+
+.game-detail-container {
+    display: inline-block;
+    min-width: 80px;
+    padding-right: 20px;
+}
+
+.game-detail-label {
+    display: none;
+}
+
+.runner-details {
+    width: 450px;
+    text-align: center;
+}
+
+.runner-name {
+    font-size: 46px;
+    height: 50px;
+    line-height: 50px;
+}
+
+.pronouns {
+    font-size: 30px;
+    height: 40px;
+    line-height: 40px;
+}
+
+.finish-time {
+    z-index: auto;
+    width: 135px;
+    height: 45px;
+    line-height: 47px;
+    font-size: 40px;
+}
+
+#runner-details1 {
+    display: block;
+    top: 721px;
+    left: 15px;
+}
+
+#finish-time1 {
+    top: -49px;
+    left: 5px;
+}
+
+#runner-details2 {
+    display: block;
+    top: 721px;
+    right: 15px;
+}
+
+
+#finish-time2 {
+    top: -49px;
+    right: 5px;
+}
+
+.game-feed {
+    width: 930px;
+    height: 696px;
+}
+
+#game-feed1 {
+    display: block;
+    top: 15px;
+    left: 15px;
+}
+
+#game-feed2 {
+    display: block;
+    top: 15px;
+    right: 15px;
+}
