@@ -1,0 +1,240 @@
+.game-layout-container{
+    display: none;
+}
+
+#layout-container-ff4r {
+    display: block;
+}
+
+body{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+
+    --puwp-blue: #0084ff;
+}
+
+.wrapper {
+    background: url('../../img/game-layout/ff4r.png') no-repeat;
+    font-family: "Chosence", sans-serif;
+    color: white;
+    width: 1920px;
+    height: 1080px;
+    overflow: hidden;
+    position: relative;
+}
+
+.footer {
+    position: absolute;
+    bottom: 0;
+    width: 1920px;
+    height: 260px;
+    font-size: 70px;
+}
+
+.footer-left {
+    position: absolute;
+    left: 0;
+    width: 206px;
+    height: 131px;
+}
+
+
+.footer-right {
+    position: absolute;
+    right: 0;
+    width: 206px;
+    height: 131px;
+}
+
+.timer {
+    height: 131px;
+    line-height: 131px;
+    text-align: center;
+    font-size: 72px;
+}
+
+.footer-mid {
+    position: absolute;
+    left: 206px;
+    width: 1508px;
+    height: 131px;
+}
+
+.footer-mid-left {
+    position: absolute;
+    left: 42px;
+    height: 131px;
+    width: 1508px;
+}
+
+.game-name {
+    position: absolute;
+    width: 700px;
+    height: 130px;
+    left: 20px;
+    line-height: 130px;
+    font-size: 85px;
+    top: 10px;
+}
+
+.game-details {
+    display: flex;
+    position: absolute;
+    bottom: 10px;
+    left: 25px;
+    font-size: 35px;
+}
+
+.game-detail {
+    color: #0084ff;
+    width: 150px;
+}
+
+.cell-header {
+    width: 135px;
+    height: 42px;
+}
+
+.cell-value {
+    min-width: 235px;
+    height: 42px;
+}
+
+.footer-mid-right {
+    position: absolute;
+    right: 42px;
+    height: 131px;
+    width: 500px;
+}
+
+.runner-details1 {
+    position: absolute;
+    top: 713px;
+    left: 26px;
+    width: 444px;
+    height: 80px;
+}
+
+.runner-name1 {
+    position: absolute;
+    left:-23px;
+	top: -1px;
+    width: 359px;
+    height: 80px;
+    line-height: 80px;
+    color: var(--puwp-blue);
+    font-size: 55px;
+    text-align: center;
+}
+
+.pronouns1 {
+    position: absolute;
+    font-size: 30px;
+    right: 78px;
+    top: 4px;
+    height: 80px;
+    width: 70px;
+    word-wrap: break-word;
+    color: white;
+    text-align: center;
+}
+
+.runner-details2 {
+    position: absolute;
+    top: 713px;
+    right: 22px;
+    width: 444px;
+    height: 80px;
+}
+
+.runner-name2 {
+    position: absolute;
+    left: 0;
+    width: 444px;
+    height: 80px;
+    line-height: 80px;
+    color: var(--puwp-blue);
+    font-size: 55px;
+    text-align: center;
+}
+
+.pronouns2 {
+    position: absolute;
+    font-size: 30px;
+    right: 4px;
+    top: 3px;
+    height: 80px;
+    width: 64px;
+    word-wrap: break-word;
+    color: white;
+    text-align: center;
+}
+
+.runner-details3, .runner-details4 {
+    display: none;
+}
+
+.runner-name {
+    position: absolute;
+    right: 0;
+    bottom: 5px;
+}
+
+.footer-top {
+    position: absolute;
+top: -69px;
+left: 427px;
+height: 130px;
+width: 1920px;
+}
+
+.footer-bottom {
+    position: absolute;
+	bottom: 50px;
+    left: 417px;
+    height: 130px;
+    width: 1920px;
+}
+
+.timer {
+    position: absolute;
+	right: 865px;
+    top: 12px;
+    width: 350px;
+    height: 130px;
+}
+
+.donation-total {
+    position: absolute;
+    font-size: 72px;
+    text-align: center;
+    bottom: 0;
+	right: 852px;
+    bottom: 3px;
+    width: 350px;
+    height: 130px;
+    line-height: 130px;
+    color: var(--puwp-blue);
+}
+
+.finish-time {
+    background-color: var(--puwp-blue);
+    color: white;
+    padding: 5px;
+    width: 125px;
+    height: 44px;
+    font-size: 40px;
+    margin: 0;
+    position: absolute;
+}
+
+.finish-time-runner1 {
+    top: -54px;
+    left: 1px;
+}
+
+.finish-time-runner2 {
+    top: -54px;
+    left: 304px;
+}
