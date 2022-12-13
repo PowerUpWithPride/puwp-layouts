@@ -117,3 +117,19 @@
     top: 15px;
     right: 15px;
 }
+
+#game-feed3 {
+    display: block;
+    width: 142px;
+    height: 177px;
+    top: 742px;
+    right: 965px;
+}
+
+#game-feed4 {
+    display: block;
+    width: 142px;
+    height: 177px;
+    top: 742px;
+    left: 965px;
+}
