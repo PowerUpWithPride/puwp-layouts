@@ -5,9 +5,8 @@
 const speedcontrolBundle = 'nodecg-speedcontrol';
 const donationBundle = 'speedcontrol-gdqtracker';
 
-// Hi, I wasn't smart enough to know how to fix the rotate interval without breaking everything so this is what I did. 
-//Change this back to 15000 if there is a less jank way of fixing things
-const rotateInterval = 1500000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000;
+
+const rotateInterval = 15000;
 let rotateState = 0;
 
 // Flag for whether we've resized the bid war names after updating.
@@ -55,8 +54,9 @@ $(() => {
     // Rotate between upcoming runs, incentives, and bid wars.
     setInterval(rotate, rotateInterval);
 
+    //Hi, other jank ways of fixing things
     function rotate() {
-        if (rotateState === 0) {
+      /*  if (rotateState === 0) {
             rotateState = 1;
             $('.bid-wars').hide();
             $('.schedule').fadeOut(500, () => {
@@ -80,7 +80,7 @@ $(() => {
             $('.bid-wars').fadeOut(500, () => {
                 $('.schedule').fadeIn(500);
             });
-        }
+        } */
     }
 
     function loadFromSpeedControl() {
