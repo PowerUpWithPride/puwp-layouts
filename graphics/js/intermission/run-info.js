@@ -5,7 +5,9 @@
 const speedcontrolBundle = 'nodecg-speedcontrol';
 const donationBundle = 'speedcontrol-gdqtracker';
 
-const rotateInterval = 15000;
+// Hi, I wasn't smart enough to know how to fix the rotate interval without breaking everything so this is what I did. 
+//Change this back to 15000 if there is a less jank way of fixing things
+const rotateInterval = 1500000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000;
 let rotateState = 0;
 
 // Flag for whether we've resized the bid war names after updating.
