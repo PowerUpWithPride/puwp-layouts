@@ -11,6 +11,9 @@ $(() => {
     let gameSystem = $('#platform');
     let gameYear = $('#year');
     let gameEstimate = $('#estimate');
+    let hostName = $('#host-name');
+    let hostPronouns = $('#host-pronouns');
+    let commentatorInfo = $('#commentator-info');
 
     // This is where the information is received for the run we want to display.
     // The "change" event is triggered when the current run is changed.
@@ -49,6 +52,11 @@ $(() => {
             $("#pronouns" + i).text(pronouns.join(', '));
             $("#runner-details" + i).data('teamID', team.id);
         }
+
+        // Set host name and pronouns
+        hostName.html(runData.customData.hostName);
+        hostPronouns.html(runData.customData.hostPronouns);
+        commentatorInfo.html(runData.customData.commentatorInfo);
 
         // Fix pronoun wrapping for the current layout if needed.
         FixSize('#game-name');

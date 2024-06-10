@@ -96,6 +96,29 @@ body{
     word-wrap: break-word;
 }
 
+.host-details {
+    position: absolute;
+    /*Hide host details by default.*/
+    display: none;
+}
+
+.host-name {
+    color: var(--text-color);
+    background-color: var(--text-background);
+}
+
+.commentary-details {
+    position: absolute;
+    /*Hide commentary details by default.*/
+    display: none;
+}
+
+.commentator-info {
+    color: var(--timer-color);
+    background-color: var(--timer-background);
+    word-wrap: normal;    
+}
+
 .finish-time {
     position: absolute;
     /*Hide finish times by default.  Individual layouts can show them.*/
