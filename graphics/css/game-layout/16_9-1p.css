@@ -53,6 +53,15 @@
     display: none;
 }
 
+#host {
+     height: 125px;
+    bottom: 0;
+    left: 1800px;
+    font-size: 30px;
+    padding-left: 45px;
+    padding-top: 5px;
+}
+
 #runner-details1 {
     display: block;
     height: 130px;
@@ -81,6 +90,7 @@
     right: 45px;
     top: 10px;
 }
+    
 
 #game-feed1 {
     display: block;
