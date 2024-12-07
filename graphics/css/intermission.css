@@ -3,7 +3,7 @@ div {
 }
 
 body {
-    background: url('../img/PUWP-SummerSplash.png') no-repeat; /*Summer time*/
+    background: url('../../img/_WinterSplash-BG.png') no-repeat; /*Summer time*/
     padding: 0;
     margin: 0;
     --sidebar-width: 554px;
