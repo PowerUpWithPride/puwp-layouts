@@ -5,7 +5,7 @@
 
 /* Common definitions for all layouts. */
 body {
-    background: url('../../img/_WinterSplash-BG.png') no-repeat;
+    background: url('../img/PUWP-SummerSplash.png') no-repeat; /*Summer time*/
     font-family: "Chosence", sans-serif;
     margin: 0;
     padding: 0;
