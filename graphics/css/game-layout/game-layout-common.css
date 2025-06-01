@@ -1,7 +1,7 @@
 /* Common definitions for game layouts. */
 
 body{
-     background: url('../img/PUWP-SummerSplash.png') no-repeat; /*Summer time*/
+     background: url('../../img/PUWP-SummerSplash.png') no-repeat; /*Summer time*/
 }
 
 #charity-logo-container {
