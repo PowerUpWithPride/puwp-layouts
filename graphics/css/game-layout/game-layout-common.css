@@ -99,7 +99,6 @@ body{
 .host-details {
     position: absolute;
     /*Hide host details by default.*/
-    display: none;
 }
 
 .host-name {
